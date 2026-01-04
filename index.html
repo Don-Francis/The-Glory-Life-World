@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.pathname) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <title>The Glory Life World</title>
+    <link rel="stylesheet" href="Home.css" />
+  </head>
+  <body>
+    <!-- Top Notification Bar -->
+    <div class="top-bar">
+      <p>Revealing the presence of God's Glory in the lives of His People</p>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="Tglw pics/tinywow_Logo_86859170.png" class="logo-img" />
+        <span class="logo-text">TGLW</span>
+      </div>
+
+      <nav>
+        <a href="Home.html">Home</a>
+        <a href="Devotionals.html">Devotionals</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1 class="fade-in">The Glory Life World Church</h1>
+        <p class="slide-in">
+          If you are looking for answers to your questions in life, you are in
+          the right place. God sent us to go and speak His Word without fear.
+          Our Man of God, Pastor Samuel Nasam, received this all important
+          command from the Lord Jesus Christ and ever since has been about
+          raising men and women for this great assignment.
+        </p>
+        <a href="About.html"
+          ><button class="main-btn pulse">Get to know us</button></a
+        >
+      </div>
+      <div class="hero-image">
+        <img src="Tglw pics/PSN-blueBG.png" alt="Pastor Samuel Nasam" />
+      </div>
+    </section>
+
+    <!-- Components Section -->
+    <section class="components">
+      <div class="component">
+        <h3>
+          This ministry of soul winning has been spanning for several years
+        </h3>
+      </div>
+      <div class="component">
+        <h3>
+          Everyone who gets connected recieves fervent training for the work of
+          ministry
+        </h3>
+      </div>
+      <div class="component">
+        <h3>
+          Right in this page, you will find our sound messages, heart enriching
+          devotionals, and other resources that will help you greatly.
+        </h3>
+      </div>
+      <!-- <div class="component"><h3>This is where God wants you to be</h3></div> -->
+    </section>
+
+    <!-- Product Bundles -->
+    <section class="bundles">
+      <div class="bundle">
+        <h2>Youtube</h2>
+        <p>
+          Revealing the presence of God's glory in your life. Pastor Samuel
+          Nasam, full of grace and truth.
+        </p>
+        <a href="Youtube.html"><button>Follow us</button></a>
+      </div>
+      <div class="bundle">
+        <h2>TikTok</h2>
+        <p>@pastor_samuel_nasam</p>
+        <a href="Tiktok.html"><button>Learn More</button></a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 The Glory Life World Church. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

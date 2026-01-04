@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Devotionals - The Glory Life World Church</title>
+    <link rel="stylesheet" href="Devotionals.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Pattern of Good Workd Daily Devotionals</h1>
+      <p>Enriching your life with the word of God</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="devotionals.html">Devotionals</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search devotional by title..."
+        />
+      </div>
+
+      <div class="calendar-tab">
+        <button id="toggleCalendarBtn">📅 Select Another Date</button>
+      </div>
+
+      <div class="calendar-container" id="calendarContainer">
+        <label for="devotionalDate" style="color: #f2c94c; font-weight: bold"
+          >Choose Date:</label
+        ><br />
+        <input type="date" id="devotionalDate" />
+      </div>
+
+      <div id="devotionalDisplay" style="text-align: center; margin-top: 30px">
+        <img
+          src=""
+          alt="Devotional Image"
+          id="devotionalImage"
+          class="devotional-image"
+        />
+        <p id="devotionalMessage" style="margin-top: 15px; color: #f2c94c"></p>
+      </div>
+
+      <div class="dev-nav">
+        <button id="prevBtn">⏮️ Previous</button>
+        <button id="nextBtn">Next ⏭️</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 The Glory Life World Church. All Rights Reserved.</p>
+    </footer>
+
+    <!--    <button
+      class="scroll-btn"
+      id="scrollTop"
+      onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    >
+      ⬆️
+    </button>
+    <button
+      class="scroll-btn"
+      id="scrollBottom"
+      onclick="window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'})"
+    >
+      ⬇️
+    </button> -->
+    <script src="Devotionals.js"></script>
+  </body>
+</html>

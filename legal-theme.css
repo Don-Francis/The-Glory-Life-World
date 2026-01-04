@@ -1,0 +1,67 @@
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAGE BASE */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.7;
+  padding-bottom: 50px;
+}
+
+/* HEADER */
+.legal-header {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.legal-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+/* CONTENT WRAPPER */
+.legal-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+}
+
+/* HEADINGS */
+.legal-container h2 {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-size: 1.65rem;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* TEXT */
+.legal-container p,
+.legal-container li {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+/* LISTS */
+.legal-container ul {
+  padding-left: 25px;
+}
+
+/* FOOTER */
+.legal-footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.95rem;
+  color: #555;
+}

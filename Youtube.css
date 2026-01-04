@@ -1,0 +1,181 @@
+/* GENERAL */
+body {
+  margin: 0;
+  background: #0b1224;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* TOP BAR */
+.top-bar {
+  background: #e0a800;
+  padding: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #0b1224;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 35px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: #9bb5ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a.active,
+.navbar nav a:hover {
+  color: #ffd24c;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #132350, #0b1224);
+}
+
+.hero h1 {
+  font-size: 2.7rem;
+  color: #ffd24c;
+}
+
+.hero p {
+  color: #cdd8ff;
+  font-size: 1.1rem;
+}
+
+/* SECTION TITLE */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffd24c;
+  font-weight: bold;
+}
+
+/* VIDEO GRID */
+.video-grid {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 30px;
+}
+
+.video-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-7px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 210px;
+  border-radius: 12px;
+  border: none;
+}
+
+.load-btn {
+  margin: 20px auto;
+  display: block;
+  padding: 12px 26px;
+  background: #0a2a43; /* Dark blue */
+  color: gold;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.load-btn:hover {
+  background: gold;
+  color: #0a2a43;
+}
+
+.yt-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.yt-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: gold;
+  background: #0a2a43;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.yt-btn:hover {
+  background: gold;
+  color: #0a2a43;
+}
+
+.subscribe {
+  font-weight: bold;
+}
+.like {
+}
+.comment {
+}
+
+/* FOOTER */
+.footer {
+  padding: 25px;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  background: #0b1224;
+}
+
+/* ANIMATION */
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
